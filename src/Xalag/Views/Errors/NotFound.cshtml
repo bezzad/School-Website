@@ -1,0 +1,16 @@
+﻿@using Xalag.Properties
+
+@section styles{
+    @Styles.Render("~/Content/error")
+}
+
+<section>
+    <div class="container">
+        <img src="@Url.Content("~/Content/images/error.jpg")" alt="Page NotFound" style="padding: 50px">
+        <div class="error_box">
+            <p class="error-number">404</p>
+            <p class="error-text">@Resources.PageNotFound</p>
+            <p class="go-home"><a href="/">@Resources.Home</a></p>
+        </div><br /><br /><br /><br /><br /><br />
+    </div>
+</section>

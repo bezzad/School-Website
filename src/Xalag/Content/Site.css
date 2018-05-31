@@ -1,0 +1,89 @@
+﻿@font-face {
+    font-family: 'Iranian Sans';
+    src: url('../fonts/iransans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merkur';
+    src: url('../fonts/Merkur.otf') format('truetype');
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Iranian Sans', 'Lato', sans-serif !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse {
+    background-color: #F22211;
+    border-color: #888888;
+}
+
+.control-label {
+    float: right;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFBB00;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFFF00;
+}
+
+.body-content {
+    min-height: 80vh;
+    padding-top: 50px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    position: absolute;
+    padding-left: 50px;
+    padding-right: 50px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #FFFF00;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #FFBB00;
+}
+
+h2, h3 {
+    padding: 5px 10px 10px 10px;
+}
+
+a.navbar-brand.menu-icon {
+    padding-top: 7px;
+}
+
+.text-danger {
+    padding: 10px;
+}

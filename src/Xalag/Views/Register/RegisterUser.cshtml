@@ -1,0 +1,55 @@
+﻿@using Xalag.Properties
+@using Xalag.Core
+@model Xalag.Models.RegisterUserModel
+
+@{
+    var opt = (MultipleStepProgressTabOption)ViewBag.MultipleStepOpt;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                @Resources.BuyTicket @ViewBag.Session.Title <small>@ViewBag.Session.SubTitle</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li>@Html.ActionLink(Resources.Home, "Index", "Home")</li>
+                <li class="active">@Resources.BuyTicket</li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    @Html.MultipleStepProgressTab(opt)
+
+    <div class="alert alert-success row" role="alert">
+        <div class="list-group col-md-6">
+            <a href="#" class="list-group-item">@Resources.UserId:&nbsp;@Model.UserId</a>
+            <a href="#" class="list-group-item list-group-item-warning">@Resources.MobileNo:&nbsp;@Model.MobileNo</a>
+            <a href="#" class="list-group-item">@Resources.Birthday:&nbsp;@Model.Birthday</a>
+        </div>
+        <div class="list-group col-md-6">
+            <a href="#" class="list-group-item">@Resources.Name:&nbsp;@Model.FirstName&nbsp;@Model.LastName</a>
+            <a href="#" class="list-group-item list-group-item-warning">@Resources.NatrualCode:&nbsp;@Model.NatrualCode</a>
+            <a href="#" class="list-group-item">@Resources.Email:&nbsp;@Model.Email</a>
+        </div>
+    </div>
+
+    <br/>
+
+    @using (Html.BeginForm("RegisterUser", "Register", FormMethod.Post, new { @class = "form-horizontal", role = "form", id = "registerForm" }))
+    {
+        @Html.AntiForgeryToken()
+        <h4>@opt.Steps[opt.CurrentStepIndex - 1]</h4>
+        <hr />
+
+        <div class="form-group">
+            <a class='btn btn-success' href="javascript:void()" onclick="document.getElementById('registerForm').submit();" style="width: 180px;">
+                <span class='glyphicon glyphicon-circle-arrow-right'></span>&nbsp;@Resources.Register
+            </a>
+            <a class='btn btn-warning' href="@Url.Action("Index", "Register", new { Model.PlaceId })" style="width: 180px;">
+                <span class='glyphicon glyphicon-circle-arrow-left'></span>&nbsp;@Resources.BackToPreviewsStep
+            </a>
+        </div>
+    }
+</div>

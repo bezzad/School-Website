@@ -1,0 +1,204 @@
+﻿@using Xalag.Properties
+
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image:url('@Url.Content("~/Content/images/H1-1.jpg")');"></div>
+            <div class="carousel-caption">
+                <h1>@Resources.ImageSubTilte1</h1>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('@Url.Content("~/Content/images/H1-2.jpg")');"></div>
+            <div class="carousel-caption">
+                <h1>@Resources.ImageSubTilte2</h1>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image:url('@Url.Content("~/Content/images/H1-3.jpg")');"></div>
+            <div class="carousel-caption">
+                <h1>@Resources.ImageSubTilte3</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+</div>
+
+<div class="section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <h3><i class="fa fa-check-circle"></i>@Resources.ThirdPartyTitle1</h3>
+                <p>@Resources.ThirdParty1</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3><i class="fa fa-pencil"></i>@Resources.ThirdPartyTitle2</h3>
+                <p>@Resources.ThirdParty2</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3><i class="fa fa-folder-open"></i>@Resources.ThirdPartyTitle3</h3>
+                <p>@Resources.ThirdParty3</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section -->
+
+<div class="section-colored text-center">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>@Resources.FirstTitle</h2>
+                <p>@Resources.FirstSubTitle</p>
+                <hr>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section-colored -->
+
+<div class="section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>@Resources.PortofilioTitle</h2>
+                <hr>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section -->
+
+<div class="section-colored">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h2>@Resources.ModernBusinessTitle1</h2>
+                <ul>
+                    <li>@Resources.ModernBusinessFeatures1_1</li>
+                    <li>@Resources.ModernBusinessFeatures1_2</li>
+                    <li>@Resources.ModernBusinessFeatures1_3</li>
+                    <li>@Resources.ModernBusinessFeatures1_4</li>
+                    <li>@Resources.ModernBusinessFeatures1_5</li>
+                    <li>@Resources.ModernBusinessFeatures1_6</li>
+                    <li>@Resources.ModernBusinessFeatures1_7</li>
+                    <li>@Resources.ModernBusinessFeatures1_8</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="img-responsive" src="@Url.Content("~/Content/images/Right-Img.jpg")">
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section-colored -->
+
+<div class="section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="img-responsive" src="@Url.Content("~/Content/images/Left-Img.jpg")">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h2>@Resources.ModernBusinessTitle2</h2>
+                <ul>
+                    <li>@Resources.ModernBusinessFeatures2_1</li>
+                    <li>@Resources.ModernBusinessFeatures2_2</li>
+                    <li>@Resources.ModernBusinessFeatures2_3</li>
+                    <li>@Resources.ModernBusinessFeatures2_4</li>
+                    <li>@Resources.ModernBusinessFeatures2_5</li>
+                    <li>@Resources.ModernBusinessFeatures2_6</li>
+                    <li>@Resources.ModernBusinessFeatures2_7</li>
+                    <li>@Resources.ModernBusinessFeatures2_8</li>
+                    <li>@Resources.ModernBusinessFeatures2_9</li>
+                    <li>@Resources.ModernBusinessFeatures2_10</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section -->
+
+<div class="container">
+    <div class="row well">
+        <div class="col-lg-11 col-md-11">
+            <h4>@Resources.SecondTilte</h4>
+            <p>@Resources.SecondSubTilte</p>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->

@@ -1,0 +1,77 @@
+﻿@using System.Reflection
+@using Xalag.Core
+@using Xalag.Properties
+@{
+    var version = $"{Resources.Version} {Assembly.GetAssembly(typeof(MvcApplication))?.GetName().Version?.ToString(3)}";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Resources.AppName - @ViewBag.Title</title>
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("styles", required: false)
+</head>
+<body dir="rtl">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="~/" class="navbar-brand menu-icon">
+                    <img src='@Url.Content("~/Content/images/khalag.png")' alt="Xalag Logo" width="60" height="55">
+                </a>
+                @Html.ActionLink(Resources.AppName, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("تماس با ما", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("سوالات متداول", "Faq", "Other")</li>
+                    <li id="blog" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">خرید بلیت <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            @foreach (var session in DynamicModels.GetSessionsMenus())
+                            {
+                                <li>
+                                    @Html.ActionLink(session.Title, "Index", "Register", new { session.PlaceId }, null)
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink(Resources.Home, "Index", "Home")</li>
+                </ul>
+                @*@Html.Partial("_LoginPartial")*@
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+
+    <div class="container">
+        <hr />
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>&copy; @DateTime.Now.Year - @Resources.AppName &nbsp; @version </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

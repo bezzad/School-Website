@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Address" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>خلاق</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>تاریخ تولد</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>خانه</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="MobileNo" xml:space="preserve">
+    <value>موبایل</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="NatrualCode" xml:space="preserve">
+    <value>کد ملی</value>
+  </data>
+  <data name="Oops_Something_is_missing" xml:space="preserve">
+    <value>... وای! چیزی گم شده است</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>صفحه ی مورد نظر پیدا نشد</value>
+  </data>
+  <data name="The_0_field_is_required" xml:space="preserve">
+    <value>فیلد {0} الزامی است</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="PlaceId" xml:space="preserve">
+    <value>شناسه مکان</value>
+  </data>
+  <data name="MaxReservedChairPerUser" xml:space="preserve">
+    <value>حداکثر تعداد رزرو صندلی برای کاربر</value>
+  </data>
+  <data name="NumberOfSeats" xml:space="preserve">
+    <value>تعداد صندلی</value>
+  </data>
+  <data name="PlaceName" xml:space="preserve">
+    <value>نام مکان</value>
+  </data>
+  <data name="SessionDateTime" xml:space="preserve">
+    <value>تاریخ اجلاس</value>
+  </data>
+  <data name="SubTitle" xml:space="preserve">
+    <value>زیرعنوان</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>شناسه کاربری</value>
+  </data>
+  <data name="NatrualCodeMustBe_2_Digit" xml:space="preserve">
+    <value>کد ملی باید {2} رقمی باشد!</value>
+  </data>
+  <data name="MobileNoMustBe_2_Digit" xml:space="preserve">
+    <value>شماره موبایل باید {2} رقم و بدون 0 اولیه باشد.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>تماس با ما</value>
+  </data>
+  <data name="BuyTicket" xml:space="preserve">
+    <value>خرید بلیت</value>
+  </data>
+  <data name="WeHadLoveToHearFromYou" xml:space="preserve">
+    <value>ما دوست داریم صدایتان را بشنویم</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>سوالات متداول</value>
+  </data>
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>سوال و جواب های متداول</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>برگشت</value>
+  </data>
+  <data name="BackToPreviewsStep" xml:space="preserve">
+    <value>برگشت به مرحله قبل</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>تبریز، آبرسان، کلانتر کوچه، کوی دوم</value>
+  </data>
+  <data name="FirstSubTitle" xml:space="preserve">
+    <value>اغلب مهارت های کودکان در سن 4 و 5 سالگی شکل می گیرند و رشد می کند. بازسازی و اصلاح این مهارت ها در سنین پایین تر بهتر صورت می گیرد.</value>
+  </data>
+  <data name="FirstTitle" xml:space="preserve">
+    <value>شعله های اشتیاق و علاقه به یادگیری را در وجود فرزندتان فروزان کنید</value>
+  </data>
+  <data name="ImageSubTilte1" xml:space="preserve">
+    <value>خردسالی کودک خود را از دست ندهید</value>
+  </data>
+  <data name="ImageSubTilte2" xml:space="preserve">
+    <value>کودکانتان را از وابستگی به خود برهانید</value>
+  </data>
+  <data name="ImageSubTilte3" xml:space="preserve">
+    <value>ما ، هر مهارت و مفهومی را با بازی یاد میدهیم</value>
+  </data>
+  <data name="ModernBusinessFeatures1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ModernBusinessFeatures1_1" xml:space="preserve">
+    <value>یک کار اصولی لازم بود که بچه های گلمان؛ از همین ابتدا...</value>
+  </data>
+  <data name="ModernBusinessFeatures1_2" xml:space="preserve">
+    <value>درس را، زندگی را و ریاضی را خوب یاد بگیرند.</value>
+  </data>
+  <data name="ModernBusinessFeatures1_3" xml:space="preserve">
+    <value>و برای حضور در دبیرستان، آماده شوند.</value>
+  </data>
+  <data name="ModernBusinessFeatures1_4" xml:space="preserve">
+    <value>یک آمادگی که با شور و نشاط و عشق به یادگیری همراه باشد...</value>
+  </data>
+  <data name="ModernBusinessFeatures1_5" xml:space="preserve">
+    <value>آمده ایم و طرحی نو در انداخته ایم</value>
+  </data>
+  <data name="ModernBusinessFeatures1_6" xml:space="preserve">
+    <value>و یک پیش دبستانی با تخصصی ترین رویکرد یعنی «هوش و خلاقیت ریاضی» تأسیس نموده ایم.</value>
+  </data>
+  <data name="ModernBusinessFeatures1_7" xml:space="preserve">
+    <value>یکی از شعارهایمان این است که کودک را در حساس ترین سن یادگیری تنها نگذاریم!</value>
+  </data>
+  <data name="ModernBusinessFeatures1_8" xml:space="preserve">
+    <value>اینک از شما میخواهیم در رویداد بزرگ افتتاح این مرکز، ما را تنها نگذارید.</value>
+  </data>
+  <data name="ModernBusinessFeatures2_1" xml:space="preserve">
+    <value>اگر میخواهید کودکتان پایه ریاضی بهتری داشته باشد</value>
+  </data>
+  <data name="ModernBusinessFeatures2_10" xml:space="preserve">
+    <value>اگر میخواهید کودکتان از همین امروز شیب ملایم تیزهوشان و نمونه دولتی را شروع کند</value>
+  </data>
+  <data name="ModernBusinessFeatures2_2" xml:space="preserve">
+    <value>اگر میخواهید رابطه ی بین شما و فرزندتان قوی و پایدار باشد</value>
+  </data>
+  <data name="ModernBusinessFeatures2_3" xml:space="preserve">
+    <value>اگر میخواهید کودکتان را از وابستگی به خود رها سازید</value>
+  </data>
+  <data name="ModernBusinessFeatures2_4" xml:space="preserve">
+    <value>اگر میخواهید کودکتان برنامه ریزی کودکانه را یاد بگیرد</value>
+  </data>
+  <data name="ModernBusinessFeatures2_5" xml:space="preserve">
+    <value>اگر میخواهید دقت و تمرکز کودکتان افزایش یابد</value>
+  </data>
+  <data name="ModernBusinessFeatures2_6" xml:space="preserve">
+    <value>اگر میخواهید فرزندتان برای حضور در مدرسه آماده شود</value>
+  </data>
+  <data name="ModernBusinessFeatures2_7" xml:space="preserve">
+    <value>اگر میخواهید کودکتان یادگیری را بدون استرس انجام دهد</value>
+  </data>
+  <data name="ModernBusinessFeatures2_8" xml:space="preserve">
+    <value>اگر میخواهید کودکتان انسانی معنوی و پاکدامن و درستکار تربیت شود</value>
+  </data>
+  <data name="ModernBusinessFeatures2_9" xml:space="preserve">
+    <value>اگر میخواهید کودکتان متناسب با توانایی های خود و مطابق استانداردهای علمی رشد کند</value>
+  </data>
+  <data name="ModernBusinessTitle1" xml:space="preserve">
+    <value>رویکرد هوش و خلاقیت ریاضی</value>
+  </data>
+  <data name="ModernBusinessTitle2" xml:space="preserve">
+    <value>کار ما آموزش است نه نگهداری</value>
+  </data>
+  <data name="PortofilioTitle" xml:space="preserve">
+    <value>لذت یادگیری را به فرزندتان بچشانید</value>
+  </data>
+  <data name="SecondSubTilte" xml:space="preserve">
+    <value>ما همه ی مفاهیم و مهارت های مورد نیاز را توسط بازی یاد می دهیم.
+اولین موردی که برای «کودک» مورد نیاز است ، شور و هیجان یادگیری است نه آموزش های مستقیم و بدون هیجان!</value>
+  </data>
+  <data name="SecondTilte" xml:space="preserve">
+    <value>موثر ترین راه یادگیری در کودکتان غیر مستقیم ترین راه است</value>
+  </data>
+  <data name="ThirdParty1" xml:space="preserve">
+    <value>از همین «کودکی» باید «کودک» برای درک معانی ریاضیات آماده شود.
+بهتر است «کودک» با مفهوم آزمایش در علوم آشنا شود.</value>
+  </data>
+  <data name="ThirdParty2" xml:space="preserve">
+    <value>که از همان کودکی «برنامه ریز» باشند که بتوانند «نظم» را پیدا کنند که «صبوری» را درک کنند که «نظافت» و «آراستگی» را کشف کنند و ریاضیات را اصولی تر یاد بگیرند.</value>
+  </data>
+  <data name="ThirdParty3" xml:space="preserve">
+    <value>کافی است ما دنیای کودکان را درک کنیم.
+ما، کودک را برای زندگی در مدرسه آماده می کنیم.
+و با ابزار های اندیشه و درس که سالهای دبستان به آنها نیاز خواهد داشت آشنا می کنیم.</value>
+  </data>
+  <data name="ThirdPartyTitle1" xml:space="preserve">
+    <value>از همین کودکی . . .</value>
+  </data>
+  <data name="ThirdPartyTitle2" xml:space="preserve">
+    <value>به کودکان «کمک» می کنیم</value>
+  </data>
+  <data name="ThirdPartyTitle3" xml:space="preserve">
+    <value>کودکان دنیای مارا درک می کنند</value>
+  </data>
+</root>
